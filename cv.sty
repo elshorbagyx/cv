@@ -1,0 +1,63 @@
+\usepackage{hyperref}
+\usepackage[rm={lining,proportional},sf={lining,proportional},tt={lining,tabular,monowidth}]{cfr-lm}
+\usepackage[a4paper,%
+            left=1cm,right=1.724cm,top=1.27cm,bottom=.2cm]{geometry}
+
+\usepackage{fix-cm}    
+\makeatletter
+\newcommand\HUGE{\@setfontsize\Huge{30}{30}}
+\makeatother
+
+\def \github    {github.com/mohamedrezk122}
+\def \linkedin  {linkedin.com/in/mohamed-m-rezk}
+\def \blog      {mohamedrezk122.github.io}
+
+\newcommand{\Title}[1]{
+  {
+    \LARGE
+    \rule[1mm]{2cm}{1.5mm}%
+    \hspace{2mm}
+    \bfseries #1 
+    \vspace{5mm}
+  }
+}
+
+\newcommand{\entry}[4]{
+    \noindent\begin{minipage}[t]{.2\linewidth}
+    \hfill \noindent #1 
+    \end{minipage}
+    \hspace{2mm}
+    \vline
+    \hspace{2mm} 
+    \begin{minipage}[t]{.80\linewidth}
+    \noindent\textbf{#2} \\
+    \ifx&#3&%
+    \else
+        \noindent \emph{#3} \\
+    \fi
+    {#4}
+    \end{minipage}\\
+    \vspace{.1cm}
+}
+
+\newcommand {\col}[9]{
+    \hspace{10mm}
+    \noindent\begin{minipage}[t]{0.25\textwidth}
+    {#1} \\
+    \ifx&#4& \else {#4} \\ \fi  
+    \ifx&#7& \else {#7} \\ \fi  
+    \end{minipage}
+    \begin{minipage}[t]{0.25\textwidth}
+    {#2} \\ 
+    \ifx&#5& \else {#5} \\ \fi  
+    \ifx&#8& \else {#8} \\ \fi  
+    \end{minipage}
+    \begin{minipage}[t]{0.28\textwidth}
+    {#3} \\ 
+    \ifx&#6& \else {#6} \\ \fi  
+    \ifx&#9& \else {#9} \\ \fi  
+\end{minipage}
+\vspace{.4cm}
+}
+
+    
