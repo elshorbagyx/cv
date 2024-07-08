@@ -1,0 +1,87 @@
+\usepackage[rm={lining,proportional},sf={lining,proportional},tt={lining,tabular,monowidth}]{cfr-lm}
+\usepackage[a4paper,left=1cm,right=1.724cm,top=1.5cm,bottom=.2cm]{geometry}
+\usepackage{hyperref}
+\usepackage{fix-cm} 
+\usepackage{fancyhdr}
+\usepackage{lmodern}
+\usepackage{tabularx}
+
+\makeatletter
+\newcommand\HUGE{\@setfontsize\Huge{30}{30}}
+\makeatother
+
+\def \github    {github.com/mohamedrezk122}
+\def \linkedin  {linkedin.com/in/mohamed-m-rezk}
+\def \blog      {mohamedrezk122.github.io}
+
+\newcommand{\Title}[1]{
+  {
+    \Large
+    % \hspace{2mm}
+    \noindent\uppercase{\bfseries #1}
+    \vspace{3mm}
+    \noindent\hrule height .3mm width 1.04\linewidth %
+    \vspace{3mm}
+  }
+}
+
+\newcommand{\entry}[5]{
+    \begin{minipage}{.7\textwidth}
+      \begin{flushleft}
+        \hspace{-4mm}\textbf{#2} \\
+        \ifx&#3& \else
+        \hspace{-4mm}\emph{#3} 
+        \fi
+        \vspace{2mm}
+        \end{flushleft}
+    \end{minipage}%
+    \begin{minipage}{.3\textwidth}
+      \begin{flushright}
+        \noindent #1 \\    
+        \ifx&#4& \else
+        \hspace{-4mm}\emph{#4} 
+        \fi
+      \end{flushright}
+    \end{minipage}
+    \begin{minipage}{.05\linewidth}
+      \hfill
+    \end{minipage}%
+    \begin{minipage}{.95\linewidth}
+      {#5}
+    \end{minipage}
+    \vspace{.4cm}
+}
+
+\newcommand {\col}[9]{
+    \hspace{10mm}
+    \noindent\begin{minipage}[t]{0.25\textwidth}
+    {#1} \\
+    \ifx&#4& \else {#4} \\ \fi  
+    \ifx&#7& \else {#7} \\ \fi  
+    \end{minipage}
+    \begin{minipage}[t]{0.25\textwidth}
+    {#2} \\ 
+    \ifx&#5& \else {#5} \\ \fi  
+    \ifx&#8& \else {#8} \\ \fi  
+    \end{minipage}
+    \begin{minipage}[t]{0.28\textwidth}
+    {#3} \\ 
+    \ifx&#6& \else {#6} \\ \fi  
+    \ifx&#9& \else {#9} \\ \fi  
+\end{minipage}
+\vspace{.4cm}
+}
+
+
+\fancypagestyle{firstpage}{%
+  \fancyhf{}% clear default for head and foot
+  \rhead{}
+  \renewcommand{\headrulewidth}{0pt}
+  \lhead{
+        \vspace{4mm}
+        \small Last updated: \today
+  }
+}
+
+\pagestyle{empty}
+\thispagestyle{firstpage}
