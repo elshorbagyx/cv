@@ -17,7 +17,7 @@
 
 \vspace{2mm}
 
-\large 
+\large
 \Title{Education}
 
 \entry
@@ -32,14 +32,14 @@
      Algorithms. 
     }  
 
-\entry
-    {Class 2020}
-    {STEM High School Certificate}
-    {Dakahlia STEM School}
-    {Gamasa, Egypt}
-    {
-    \textbullet \textbf{CGPA}: 4.0 / 4.0 (1$^{st}$ Rank)
-    }
+% \entry
+%     {Class 2020}
+%     {STEM High School Certificate}
+%     {Dakahlia STEM School}
+%     {Gamasa, Egypt}
+%     {
+%     \textbullet \textbf{CGPA}: 4.0 / 4.0 (1$^{st}$ Rank)
+%     }
 
 \vspace{2mm}
 
@@ -47,8 +47,9 @@
 \Title{Technical Skills}
 
 \begin{tabular}{ l l l l l}
-      \bf{- Programming-Languages (high proficiency):} & Python, & Lua \\ 
-      \bf{- Programming Languages (some proficiency):} & C/C++, & Java & Rust \\ 
+      \bf{- Programming-Languages (high proficiency):} & Python, & Lua, & C++ \\ 
+      \bf{- Programming Languages (some proficiency):} & C, & Java, & Rust \\ 
+      \bf{- Graphics:} & OpenGL \\ 
       \bf{- Scientific Computing:} & Octave, & NumPy, & SciPy, & Matplotlib \\ 
       \bf{- System and Scripting:} & Linux, & Bash \\ 
       \bf{- Databases \& Data stores :} & MySQL, & TinyDB, & Pandas \\ 
@@ -60,7 +61,7 @@
 \Title{Experience}
 
 \entry
-    {Oct 2023 - Present }
+    {Oct 2023 - Feb 2024}
     {AI Software Intern}
     {ASMARINE (Autonomous Underwater Vehicles team)}
     {ASU, Cairo, Egypt}
@@ -84,45 +85,31 @@
 \entry
     {Aug - Oct 2022}
     {Optimization \& Signal Processing Intern}
-    {Center for Sound, Vibration \& Smart Structures}
+    {Dynamic Systems \& Digitalization cluster - Cardiff University}
     {ASU, Cairo}
     {
       \textbullet Implemented an acoustic wave velocity algorithm within composites.\\
       \textbullet Analyzed raw sensor data to localize acoustic sources such as cracks. \\
       \textbullet Implemented optimization algorithms (particle swarm, simulated annealing, simplex method).\\
-      \textbullet Navigate: 
+      \textbullet Explore the project: 
       \href{\github/AE-software.git}{\underline{Code}} / %
       \href{\github/AE-software/blob/master/Final-Report/Report.pdf}{\underline{Report}}
     }
 
 \vspace{2mm}
 
-\Title{Travel Grants}
-
-\entry
-    {July 2024}
-    {SciPy 2024 Conference}  
-    {SciPy, NumFocus}
-    {Tacoma, WA, USA}
-    {
-      \textbullet Fully funded Trip.\\
-      \textbullet Pushing the open-source ecosystem forward.
-    }
-
-\entry
-    {Mar 2023}
-    {Visiting Student}
-    {Cardiff University, School of Engineering}
-    {Wales, UK}
-    {
-      \textbullet Fully funded program (UK-HE Climate Research Grant). \\
-      \textbullet Cultural and educational exchange. \\
-      \textbullet Conducted Fourier analysis and signal processing on composite structures. \\ 
-    }
+% \entry
+%     {Mar 2023}
+%     {Visiting Student}
+%     {Cardiff University, School of Engineering}
+%     {Wales, UK}
+%     {
+%       \textbullet Fully funded program (UK-HE Climate Research Grant). \\
+%       \textbullet Conducted Fourier analysis and signal processing on composite structures. \\ 
+%     }
 
 
 \vspace{2mm}
-
 \Title{Articles}
 
 \entry
@@ -131,11 +118,12 @@
     {} {}
     {
       \textbullet Discussed the generalization and solvability of the fifteen puzzle.\\
-      \textbullet Implemented a dedicated solver using weighted iterative deepening A*.\\
-      \textbullet Navigate:  \href{\blog/fifteen-puzzle}{\underline{Article}} | 
+      \textbullet Implemented a PQ solver using weighted iterative deepening A*.\\
+      \textbullet Explore the article:  \href{\blog/fifteen-puzzle}{\underline{Article}} | 
       \href{\github/fifteen-puzzle-solver}{\underline{Solver Code}}
     } 
 
+\newpage
 
 \entry
     {May 2022}
@@ -143,26 +131,36 @@
     {} 
     {}
     {
-        \textbullet Discussed diffusion equation as a mathematical, and computational
-        model trying to generalize the results to higher dimensions \\
-        \textbullet Navigate: \href{\blog/diffusion}{\underline{Article}}
+        \textbullet Analyzed the diffusion equation as both a mathematical and computational model.\\
+        \textbullet Worked on generalizing results to higher dimensions.\\
+        \textbullet Explore the article: \href{\blog/diffusion}{\underline{Article}}
     }
 
 \vspace{2mm}
 
 \Title{Personal Projects}
 
+\entry
+    {Aug 2024}
+    {mark}
+    {} {}
+    {
+    \textbullet Developed a CLI tool for global bookmark management built on top of rofi.\\ 
+    \textbullet Implemented client-server architecture with async sockets for Rofi communication.\\
+    \textbullet Created a wrapper around TinyDB with orjson for efficient bookmark storage and querying.\\ 
+    \textbullet Added a parser for the Netscape bookmark file format and various export options.\\
+    \textbullet Navigate: \href{\github/mark}{\underline{Code}}
+    }
 
 \entry
     {Nov 2023}
     {automata-cli}
     {} {}
     {
-    \textbullet A command-line interface program to parse program-like automata specifications. \\ 
-    \textbullet The stored automata structure can be minimized, converted to other forms, or 
-    manipulated with user-specified algorithms. \\ 
-    \textbullet Supports rendering automata to various formats for document embedding.\\
-    \textbullet Navigate: \href{\github/automata-cli}{\underline{Code}}
+    \textbullet Built a CLI tool to parse and manipulate program-like automata specifications. \\ 
+    \textbullet Enabled minimization, format conversion, and custom algorithm manipulation. \\ 
+    \textbullet Supported rendering automata into various formats for document embedding.\\
+    \textbullet Explore the project: \href{\github/automata-cli}{\underline{Code}}
     }
 
 \entry
@@ -170,9 +168,10 @@
     {cv.py}
     {} {}  
     {
-      \textbullet A CLI abstraction of the LaTeX-based CV building process using YAML to TeX conversion.\\
-      \textbullet Compilation is done with a LaTeX cloud compiler or locally if applicable.
-      \textbullet Navigate: \href{\github/CV.py}{\underline{Code}}
+    \textbullet Created a CLI tool to easily convert YAML files into LaTeX-based CVs.\\
+    \textbullet Enabled users to focus on content creation while the tool manages the formatting process.\\
+    \textbullet Supported CV compilation through either a cloud-based LaTeX compiler or local compilation.\\
+    \textbullet Explore the project: \href{\github/CV.py}{\underline{Code}}
     }
 
 \entry
@@ -180,61 +179,26 @@
     {Implementation of A* on Open Street Maps Data }
     {} {}    
     {
-       \textbullet An implementation of the A* algorithm with KDTree and KNN algorithms to compute the shortest path on open street maps data based on the haversine heuristic and randomized median of medians algorithm to speed up KDTree formation.\\
-       \textbullet This algorithm is developed on top of an extended Kalman filter that runs on a bare-metal embedded microcontroller with a GPS \& IMU. \\
-       \textbullet Navigate: \href{\github/Astar-OSM}{\underline{Code}}
+       \textbullet Implemented the A* algorithm with KDTree and KNN to compute the shortest path on OpenStreetMap data.\\
+       \textbullet Utilized the Haversine heuristic and a randomized median of medians to accelerate KDTree formation. \\
+       \textbullet Developed the algorithm on top of an extended Kalman filter, running on a bare-metal embedded microcontroller.\\
+       \textbullet Explore the project: \href{\github/Astar-OSM}{\underline{Code}}
     }
-
-
-\vspace{2mm}
-
-\Title{Awards \& Honors}
-
-\entry
-    {Summer 2023}
-    {Most Innovative Solution with 25k Egyptian Pound Prize}
-    {NASA Space Apps Cairo}
-    {The American University in Cairo }    
-    {
-      My team and I were fortunate to receive the "Most Innovative Solution" award along with a prize of 25,000 Egyptian pounds at the NASA Space Apps competition. This competition featured approximately 150 teams from various disciplines. Our project focused on the unique concept of data sonification, with a particular emphasis on enhancing the perception of space imagery.  
-    }
-    
-\entry
-    {Summer 2022}
-    {Top 100 entries \& Top 25 Articles}
-    {Summer of Math Exposition (SoME\#2)}
-    {3Blue1Brown \& Leios Labs}  
-    {
-        \textbullet Secured one of the top 100 submissions overall.\\
-        \textbullet Secured one of the top 25 non-video submissions (e.g. articles and games).\\
-        \textbullet The competition focused on effectively presenting in-depth content in mathematics, computer science, and physics through engaging mediums.\\
-        \textbullet Navigate: \href{\blog/diffusion}{\underline{Article}}
-    }
-
-
-\vspace{2mm}
-
-\Title{Open-Source Contributions}
-    
-\begin{tabular}{ l l}
-- \bf{\href{https://github.com/networkx/networkx/pulls?q=is%3Apr+author%3Amohamedrezk122+}{\underline{NetworkX}}} & a network analysis library and graph theoretic algorithms in Python. \\
-- \bf{\href{https://github.com/sympy/sympy/pulls?q=is%3Apr+author%3Amohamedrezk122+}{\underline{SymPy}}} & a computer algebra \& symbolic computation in Python.
-\end{tabular}
-
-% \newpage 
 
 \vspace{4mm}
 
 \Title{Hackathons \& Competitions}
 
-\entry 
+\entry
     {Summer 2023}
     {NASA Space Apps Cairo}
-    {The American University in Cairo  }
+    {The American University in Cairo }    
     {}
-    { \textbullet Developed a web application that transforms various types of space images, into audible sound and harmonious music. \\
+    {
+      \textbullet Developed a project centered on data sonification, enhancing the perception of space imagery.\\
       \textbullet Implemented a melody fitting algorithm: aligning classical music pieces with the input image.\\
-      \textbullet Implemented a panoramic projection algorithm.\\
+      \textbullet Received the "Most Innovative Solution" award at the NASA Space Apps competition.\\
+      \textbullet Awarded a prize of 25,000 Egyptian pounds.\\
     }
     
 \entry 
@@ -249,17 +213,62 @@
       \textbullet Navigate: \href{\github/Apollo}{\underline{Code}}
     }
 
+\vspace{2mm}
+\newpage
+
+\Title{Awards \& Honors}
 
 \entry
-    {Summer 2021}
-    {NASA Space Apps Cairo}
-    {Virtual} 
-    {}
+    {July 2024}
+    {SciPy 2024 Conference}  
+    {SciPy, NumFocus}
+    {Tacoma, WA, USA}
     {
-      \textbullet Created a web interface for simulating distant rotating Jupiter asteroids.\\
-      \textbullet Implemented a real-time light curves computation algorithm \\
-      \textbullet Constructed a simplified 3D solar system scene with Blender's Python API to simulate approximate conditions an asteroid encounters in reality. \\
-      \textbullet Navigate: \href{\github/Asteroid-Bent}{\underline{Code}}
+        \textbullet Selected to attend SciPy Conference 2024 with full financial aid.\\
+        \textbullet Recognized for impact and dedication in advancing open source projects.\\
+        \textbullet Engaged with leading experts in the field of scientific and high performance computing.\\
     }
+% \newpage    
+
+\entry
+    {Summer 2022}
+    {Top 100 entries \& Top 25 Articles}
+    {Summer of Math Exposition (SoME\#2)}
+    {3Blue1Brown \& Leios Labs}  
+    {
+        \textbullet Participated in a competition aimed at presenting in-depth content in mathematics, computer science, and physics through engaging mediums.\\
+        \textbullet Secured a spot among the top 100 overall submissions.\\
+        \textbullet Ranked in the top 25 for non-video submissions (e.g., articles and games).\\
+    }
+
+\vspace{4mm}
+
+
+\Title{Open-Source Contributions}
+
+\vspace{-2mm}
+\begin{figure}[h]
+\begin{tabular}{ l l}
+- \bf{\href{https://github.com/networkx/networkx/pulls?q=is%3Apr+author%3Amohamedrezk122+}{\underline{NetworkX}}} & a network analysis library and graph theoretic algorithms in Python. \\
+- \bf{\href{https://github.com/sympy/sympy/pulls?q=is%3Apr+author%3Amohamedrezk122+}{\underline{SymPy}}} & a computer algebra \& symbolic computation in Python.
+\end{tabular}
+\end{figure}
+
+\vspace{3mm}
+
+
+
+
+% \entry
+%     {Summer 2021}
+%     {NASA Space Apps Cairo}
+%     {Virtual} 
+%     {}
+%     {
+%       \textbullet Created a web interface to simulate distant rotating Jupiter asteroids.\\
+%       \textbullet Implemented a real-time algorithm for computing light curves.\\
+%       \textbullet Built a simplified 3D solar system scene using Blender's Python API to simulate the realistic conditions an asteroid encounters. \\
+%       \textbullet Explore the project: \href{\github/Asteroid-Bent}{\underline{Code}}
+%     }
 
 \end{document}
