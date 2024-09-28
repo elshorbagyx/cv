@@ -1,5 +1,11 @@
 \usepackage[rm={lining,proportional},sf={lining,proportional},tt={lining,tabular,monowidth}]{cfr-lm}
-\usepackage[a4paper,left=1cm,right=1.724cm,top=1.5cm,bottom=1cm]{geometry}
+\usepackage[
+a4paper,
+left=1cm,
+right=1.724cm,
+top=1.5cm,
+bottom=1cm,
+]{geometry}
 \usepackage{hyperref}
 \usepackage{fix-cm} 
 \usepackage{fancyhdr}
@@ -26,7 +32,7 @@
 }
 
 \newcommand{\entry}[5]{
-    \begin{minipage}{.65\textwidth}
+    \begin{minipage}{.7\textwidth}
       \begin{flushleft}
         \hspace{-4mm}\textbf{#2} \\
         \ifx&#3& \else
@@ -35,7 +41,7 @@
         \vspace{2mm}
         \end{flushleft}
     \end{minipage}%
-    \begin{minipage}{.35\textwidth}
+    \begin{minipage}{.3\textwidth}
       \begin{flushright}
         \noindent #1 \\    
         \ifx&#4& \else
@@ -43,10 +49,10 @@
         \fi
       \end{flushright}
     \end{minipage}
-    \begin{minipage}{.05\linewidth}
+    \begin{minipage}{.03\linewidth}
       \hfill
     \end{minipage}%
-    \begin{minipage}{.95\linewidth}
+    \begin{minipage}{.98\linewidth}
       {#5}
     \end{minipage}
     \vspace{.4cm}
