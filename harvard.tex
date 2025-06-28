@@ -7,7 +7,7 @@
     \noindent \Huge{\bfseries Mohamed El Shorbagy}\\[.4em]
     \large
         \textbf{Email:} mohrizq895@gmail.com 
-    |   \textbf{Tel:} $+20 \ 1222448102$
+    |   \textbf{Tel:} $+201222448102$
     |   \link{GitHub}{\github}
     |   \link{LinkedIn}{\linkedin}
     |   \link{Website}{\site}   
@@ -20,26 +20,29 @@
 
 \entry
     {2020 - 2025} 
-    {Bachelor of Science in Computer \& Systems Engineering }
+    {Bachelor of Science in Computer and Systems Engineering }
     {Ain Shams University}
     {Cairo, Egypt}
-    {\tb Senior year 2 (year 5/5) | \textbf{GPA}: 3.62 / 4.00 | \textbf{Class rank: 4/160} \\  
+    {\tb \textbf{GPA}: 3.64 / 4.00 | \textbf{Class rank}: 4/160 \\  
      \tb \textbf{Relevant Courses:} Compiler Design, Operating Systems, Embedded Systems, Network Security, Discrete Math, Image Processing, Machine Learning, Deep Learning, Database Systems, Artificial Intelligence, Software Engineering, Distributed Systems, Data Structures, Design of Algorithms.\\
-     \tb \textbf{Thesis:} \emph{\textbf{Dental Crown Generation with Generative AI}}, sponsored by \linkk{Atomica.ai}{https://atomica.ai/}\\
-     Contributions:\\
-     \hspace*{5mm} \tb Developed a geometric kernel in Rust with Python bindings for accelerated mesh operations.\\
-     \hspace*{5mm} \tb Implemented a dental arch (Occlusion) alignment algorithm.
+     \tb \textbf{Thesis:} \emph{\textbf{Automated Dental Crown Generation Pipeline}}, sponsored by \linkk{Atomica.ai}{https://atomica.ai/}\\
+     % Contributions:\\
+     \tb Developed \emph{mcg}: a minimal geometry processing library in \textbf{C++} with a focus on speed. \emph{mcg} is written to support graphics operations such as closest point computations and intersection tests, geometric operations such as mesh surface deformation (Laplacian deformer), halfedge-mesh operations such as enclosed faces inside loops, shortest path computations on the surface of mesh such as A*, and to provide spatial data structures such as BVHTree and KDTree.\\
+     \tb Developed virtual dental arch alignment algorithm (using \emph{mcg}).\\
+     \tb Developed automated dental crown positioning algorithm (using \emph{mcg}).\\
+     \tb Developed semi-automatic dental restoration pipeline (using \emph{mcg}).\\
+     \tb Developed \emph{fastmesh}: a lazy mesh file parser and optimizer in \textbf{Rust} with Python bindings (using PyO3) for accelerated mesh operations to serve 3D deep learning based tasks.
     }  
 
 \vspace{2mm}
 
 \Title{Technical Skills}
 
-\begin{tabular}{ l l l l l}
-      \bf{- Programming-Languages:} & Python, & Lua, & C++, & Rust\\ 
+\begin{tabular}{ l l l l l l l}
+      \bf{- Programming-Languages:} & Python, & C++, & Lua, & Rust, & Zig\\ 
       \bf{- Graphics:} & OpenGL,&  SDL, & ASSIMP \\ 
+      \bf{- Tools \& Platforms:} & Linux, & Bash, & CMake, & git, & gdb, & perf \\ 
       % \bf{- Scientific Computing:} & Octave, & NumPy, & SciPy, & Matplotlib \\ 
-      \bf{- Tools \& Platforms:} & Linux, & Bash, & CMake, & git \\ 
       % \bf{- Databases \& Data stores :} & MySQL, & TinyDB, & Pandas \\ 
        
 \end{tabular}
@@ -49,24 +52,36 @@
 \Title{Experience}
 
 \entry
+    {Feb 2025 - Present}
+    {Computational Geometry Software Engineer (C++)}
+    {Atomica AI (Dental CAD software suite), Remote}
+    {Atlanta, GA, United States}
+    {
+        \tb Optimized BVHTree reducing memory consumption by 50\% and build time.\\
+        \tb Worked on adaptive remeshing to reduce triangle count in planar areas.\\
+        \tb Implemented balanced KDTree data structure to support pointcloud operations.\\
+        \tb Worked on repair algorithms such as non-manifold vertex handling, collapsing, and hole stitching.\\
+        \tb Worked on dental crown generation tools with Laplacian surface deformer.\\
+    }
+
+\entry
     {Oct 2023 - Feb 2024}
     {Software Engineering Intern}
     {ASMARINE (Autonomous Underwater Vehicles team)}
     {ASU, Cairo, Egypt}
     {
-      \tb Implemented state-of-the-art algorithms in SLAM \& Computational Geometry. \\
+      \tb Implemented state-of-the-art algorithms for SLAM and computational geometry.\\
       \tb Optimized code for resource-constrained computers.
     }
 
 \entry
     {Jun - Sep 2023}
     {Undergraduate Research Assistant}
-    {Human Centered Mechatronics Lab}
+    {Human-Centered Mechatronics Lab}
     {ASU Virtual Hospitals, ASU}
     {
-      \tb Implemented a TCP communication tunnel to retrieve data from various sensors through XML. \\
-      \tb Synchronized motion capture cameras with the metabolic energy consumption system. \\
-      \tb Automated sensor calibration process.
+      \tb Implemented a TCP communication tunnel to retrieve sensor data via XML communication. \\
+      \tb Synchronized motion capture cameras with metabolic energy measurement systems. \\
     }
 
 \entry
@@ -79,25 +94,35 @@
       \tb Implemented TDOA algorithm with particle swarm optimization to localize acoustic sources.
     }
 
-
+\newpage
 \Title{Personal Projects}
 
 \entry
-    {Sep 2024}
-    {mesher: 3D Triangular mesh viewer in C++, \link{Code}{\github/mesher}}
+    {Jul 2024 - present}
+    {zain: 64-bit Lua VM interpreter implementation in Zig}
     {}{}
     {
-        \tb Implemented a mesh viewer with OpenGL API, supporting lighting, and camera movement.\\
-        \tb Implemented triangle selection algorithm with BVH and Möller–Trumbore algorithm.
+        \tb Implemented high-performance Lua lexer achieving $\approx$ 120 MB/s throughput.\\
+        \tb Implemented a recursive descent parser with precedence climbing algorithm.\\
+        \tb Developed a Lua 5.3 bytecode decompiler and verifier.
+        % \tb Investigated the possibility of adapting an intermediate representation possibly SSA.
     }
+
+% \entry
+%     {Sep 2024 - present}
+%     {mesher: 3D Triangular mesh viewer in C++, \link{Code}{\github/mesher}}
+%     {}{}
+%     {
+%         \tb Implemented a mesh viewer with OpenGL API, supporting lighting, and camera movement.\\
+%         \tb Implemented triangle selection algorithm with BVH and Möller–Trumbore algorithm.
+%     }
 
 \entry
     {Aug 2024}
-    {mark: CLI-based Bookmark manager, \link{Code}{\github/mark}}
+    {mark: CLI-based bookmark manager, \link{Code}{\github/mark}}
     {} {}
     {
-        \tb Developed a CLI tool for global bookmark management built on top of rofi.\\ 
-        \tb Implemented client-server architecture with async sockets for Rofi communication.\\
+        \tb Implemented client-server architecture with synchronous sockets for Rofi integration.\\
         \tb Created a wrapper around TinyDB with orjson for efficient bookmark storage and querying.\\ 
         \tb Added a parser for the Netscape bookmark file format and various export options.
     }
@@ -114,7 +139,7 @@
 
 \entry
     {Feb 2023}
-    {cv.py: YAML to TeX Adapter, \link{Code}{\github/CV.py}}
+    {cv.py: YAML to LaTeX Adapter, \link{Code}{\github/CV.py}}
     {} {}  
     {
         \tb Created a CLI tool to easily convert YAML files into LaTeX-based CVs.\\
@@ -122,27 +147,29 @@
         \tb Supported CV compilation through either a cloud-based LaTeX compiler or local compilation.
     }
 
-\entry
-    {Feb 2023}
-    {Implementation of A* on Open Street Maps Data, \link{Code}{\github/Astar-OSM}}
-    {} {}    
-    {
-       \tb Implemented A* algorithm with KDTree and KNN to compute the shortest path on OSM data.\\
-       \tb Utilized the randomized median of medians algorithm to accelerate KDTree construction. \\
-       \tb Developed the algorithm on top of an extended Kalman filter and embedded microcomputer.
-    }
+% \entry
+%     {Feb 2023}
+%     {Implementation of A* on Open Street Maps Data, \link{Code}{\github/Astar-OSM}}
+%     {} {}    
+%     {
+%        \tb Implemented A* algorithm with KDTree and KNN to compute the shortest path on OSM data.\\
+%        \tb Utilized the randomized median of medians algorithm to accelerate KDTree construction. \\
+%        \tb Developed the algorithm on top of an extended Kalman filter and embedded microcomputer.
+%     }
 
 \Title{Open-Source Contributions}
 
 \begin{tabular}{ll}
-- \linkk{NetworkX}{https://github.com/networkx/networkx/pulls?q=is\%3Apr+author\%3Amohamedrezk122+}
+- \linkk{Blender}{https://projects.blender.org/blender/blender/pulls?type=created_by\&state=closed\&milestone=0\&project=0\&assignee=0\&poster=elshorbagyx}
+ & a 3D creation suite and graphics software in C++. \\
+ - \linkk{PMP-Library}{https://github.com/pmp-library/pmp-library/pulls?q=\%20is\%3Apr\%20author\%3Aelshorbagyx} & a polygon mesh geometry processing library in C++.\\
+- \linkk{NetworkX}{https://github.com/networkx/networkx/pulls?q=is\%3Apr+author\%3Aelshorbagyx+}
  & a network analysis library and graph theoretic algorithms in Python. \\
-- \linkk{SymPy}{https://github.com/sympy/sympy/pulls?q=is\%3Apr+author\%3Amohamedrezk122+}
+- \linkk{SymPy}{https://github.com/sympy/sympy/pulls?q=is\%3Apr+author\%3Aelshorbagyx+}
  & a computer algebra \& symbolic computation in Python.
 \end{tabular}
 
 \vspace{4mm}
-
 
 \Title{Hackathons \& Competitions}
 
@@ -151,9 +178,9 @@
     {NASA Space Apps Cairo}
     {The American University in Cairo }{}
     {
-        \tb Developed a project centered on data sonification, enhancing the perception of space imagery.\\
-        \tb Implemented a melody fitting algorithm: aligning classical music pieces with the input image.\\
-        \tb Received the \textbf{"Most Innovative Solution"} award and \textbf{25k EGP} prize.
+        \tb Developed a project focused on data sonification, enhancing the perception of space imagery.\\
+        \tb Implemented a melody fitting algorithm for aligning classical music pieces with the input image.\\
+        \tb Received the \textbf{"Most Innovative Solution"} award and \textbf{25,000 EGP} prize.
     }
     
 \entry 
@@ -163,7 +190,7 @@
     { 
         \tb Developed a web interface for ISS 3D virtual tracking in real-time. \\
         \tb Implemented orbital propagation algorithm and a sun tracking algorithm for ISS solar panels.\\
-        \tb Awarded 500\$ AWS Credit Points Prize.
+        \tb Awarded \$500 AWS Credit.
     }
 
 \Title{Awards \& Honors}
@@ -176,7 +203,7 @@
     {
         \tb Selected to attend SciPy Conference 2024 with full financial aid.\\
         % \tb Recognized for impact and dedication in advancing open source projects.\\
-        \tb Engaged with leading experts in the field of scientific and high performance computing.
+        \tb Engaged with leading experts in scientific and high-performance computing.
     }
 
 \entry
@@ -186,30 +213,31 @@
     {3Blue1Brown \& Leios Labs}  
     {
         % \tb Participated in a competition aimed at presenting in-depth content in mathematics, computer science, and physics through engaging mediums.\\
+        \tb Participated in a global competition for creating in-depth math, CS, and physics content.\\
         \tb Secured a spot among the top 100 overall submissions.\\
         \tb Ranked in the top 25 for non-video submissions (e.g., articles and games).
     }
 
-\Title{Articles}
+% \Title{Articles}
 
-\entry
-    {Jul 2023}
-    {The Generalization of Fifteen Puzzle, 
-    \link{Article}{\site/fifteen-puzzle}\link{Code}{\github/fifteen-puzzle-solver}}  
-    {} {}
-    {
-      \tb Discussed the generalization and solvability of the fifteen puzzle with group theory.\\
-      \tb Implemented a PQ solver using weighted iterative deepening A*.
-    } 
+% \entry
+%     {Jul 2023}
+%     {The Generalization of Fifteen Puzzle, 
+%     \link{Article}{\site/fifteen-puzzle}\link{Code}{\github/fifteen-puzzle-solver}}  
+%     {} {}
+%     {
+%       \tb Discussed the generalization and solvability of the fifteen puzzle with group theory.\\
+%       \tb Implemented a PQ solver using weighted iterative deepening A*.
+%     } 
 
-\entry
-    {May 2022}
-    {Diffusion Equation: A computational approach, \link{Article}{\site/diffusion}}  
-    {} 
-    {}
-    {
-        \tb Analyzed the diffusion equation as both a mathematical and computational model.\\
-        \tb Worked on generalizing results to higher dimensions.    
-    }
+% \entry
+%     {May 2022}
+%     {Diffusion Equation: A computational approach, \link{Article}{\site/diffusion}}  
+%     {} 
+%     {}
+%     {
+%         \tb Analyzed the diffusion equation as both a mathematical and computational model.\\
+%         \tb Worked on generalizing results to higher dimensions.    
+%     }
 
 \end{document}
