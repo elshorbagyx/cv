@@ -1,44 +1,79 @@
-\usepackage[rm={lining,proportional},sf={lining,proportional},tt={lining,tabular,monowidth}]{cfr-lm}
-\usepackage[a4paper,left=1cm,right=1.724cm,top=1.5cm,bottom=.2cm]{geometry}
+\usepackage[
+a4paper,
+left=1cm,
+right=1.724cm,
+top=1.5cm,
+bottom=1cm,
+]{geometry}
 \usepackage{hyperref}
 \usepackage{fix-cm} 
 \usepackage{fancyhdr}
 \usepackage{lmodern}
+\usepackage{tabularx}
+\usepackage[T1]{fontenc}
+
+\hypersetup{
+    colorlinks=true,
+    linkcolor=blue,
+    filecolor=blue,      
+    urlcolor=blue,
+    pdftitle={mohamed-elshorbagy-cv},
+}
+
+\newcommand{\ts}{\textsuperscript}
+\newcommand{\nf}{\normalfont}
+\newcommand{\tb}{\textbullet}
+\newcommand{\indnet}{\hspace*{1cm}}
+
+\newcommand{\link}[2]{\textbf{\href{#2}{[\underline{#1}]}}}
+\newcommand{\linkk}[2]{\textbf{\href{#2}{\underline{#1}}}}
 
 \makeatletter
 \newcommand\HUGE{\@setfontsize\Huge{30}{30}}
 \makeatother
 
-\def \github    {github.com/mohamedrezk122}
-\def \linkedin  {linkedin.com/in/mohamed-m-rezk}
-\def \blog      {mohamedrezk122.github.io}
+\def \github    {https://github.com/elshorbagyx}
+\def \linkedin  {https://linkedin.com/in/mohamed-m-rezk}
+\def \site      {https://elshorbagyx.github.io}
 
 \newcommand{\Title}[1]{
   {
-    \LARGE
-    \rule[1mm]{2cm}{1.5mm}%
+    \Large
+    \noindent\rule[1mm]{2cm}{1.5mm}%
     \hspace{2mm}
-    \bfseries #1 
-    \vspace{5mm}
+    \noindent\uppercase{\bfseries #1}
+    \vspace{3mm}
+    % \noindent\hrule height .3mm width 1.04\linewidth %
+    % \vspace{3mm}
   }
 }
 
-\newcommand{\entry}[4]{
-    \noindent\begin{minipage}[t]{.2\linewidth}
-    \hfill \noindent #1 
+\newcommand{\entry}[5]{
+    \begin{minipage}{.7\textwidth}
+      \begin{flushleft}
+        \hspace{-4mm}\textbf{#2} \\
+        \ifx&#3& \else
+        \hspace{-4mm}\emph{#3} 
+        \fi
+        \vspace{2mm}
+        \end{flushleft}
+    \end{minipage}%
+    \begin{minipage}{.3\textwidth}
+      \begin{flushright}
+        \noindent #1 \\    
+        \ifx&#4& \else
+        \hspace{-4mm}\emph{#4} 
+        \fi
+        \vspace{2mm}
+      \end{flushright}
     \end{minipage}
-    \hspace{2mm}
-    \vline
-    \hspace{2mm} 
-    \begin{minipage}[t]{.80\linewidth}
-    \noindent\textbf{#2} \\
-    \ifx&#3&%
-    \else
-        \noindent \emph{#3} \\
-    \fi
-    {#4}
-    \end{minipage}\\
-    \vspace{.1cm}
+    \begin{minipage}{.03\linewidth}
+      \hfill
+    \end{minipage}%
+    \begin{minipage}{.98\linewidth}
+      {#5}
+    \end{minipage}
+    \vspace{2mm}
 }
 
 \newcommand {\col}[9]{
@@ -68,7 +103,7 @@
   \renewcommand{\headrulewidth}{0pt}
   \lhead{
         \vspace{4mm}
-        \large Last updated: \today
+        \small Last updated: \today
   }
 }
 

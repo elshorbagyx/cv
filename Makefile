@@ -1,6 +1,5 @@
 .PHONY: cv
 cv:
-	pdflatex harvard.tex
-	mv harvard.pdf mohamed-elshorbagy-cv.pdf
-	latexmk -c 
+	pdflatex -jobname=mohamed-elshorbagy-cv cv.tex
+	latexmk -c -jobname=mohamed-elshorbagy-cv
 	rm *.synctex
